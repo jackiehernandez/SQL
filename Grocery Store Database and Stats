@@ -1,0 +1,22 @@
+CREATE table clothes ( id INTEGER PRIMARY KEY, name TEXT, quantity_available INTEGER, price REAL, petite_sizing_vailable TEXT, clearance TEXT);
+
+INSERT INTO clothes VALUES (1, "Pink Shirt", 12, 8.95, "NO", "YES"); 
+INSERT INTO clothes VALUES (2, "Boyfriend Jeans", 6, 32.58, "YES", "NO");
+INSERT INTO clothes VALUES (3, "6 pair socks", 30, 6.98, "N/A", "NO");
+INSERT INTO clothes VALUES (4, "shorts", 13, 16.95, "YES", "YES");
+INSERT INTO clothes VALUEs (5, "sundress", 31, 34.99, "NO", "NO");
+INSERT INTO clothes VALUES (6, "men's boxers", 24, 13.99, "N/A", "NO");
+INSERT INTO clothes VALUES (7, "baby socks", 41, 3.99, "N/A", "YES");
+INSERT INTO clothes VALUES (8, "ladies gloves", 9, 3.99, "YES", "NO");
+INSERT INTO clothes VALUES (9, "men's shoes", 3, 64.99, "N/A", "NO");
+INSERT INTO clothes VALUES (10, "women's shoes", 7, 57.98, "N/A", "YES");
+INSERT INTO clothes VALUES (11, "pajama set", 29, 19.99, "YES", "NO");
+INSERT INTO clothes VALUES (12, "scarf", 13, 9.95, "N/A", "NO");
+INSERT INTO clothes VALUES (13, "skinny jeans", 38, 40.99, "YES", "YES");
+INSERT INTO clothes VALUES (14, "banana hammock", 2, 1.99, "NO", "YES");
+INSERT INTO clothes VALUES (15, "earmuffs", 6, 6.97, "N/A","YES");
+
+SELECT * FROM clothes;
+SELECT * FROM clothes WHERE price < 20.00 ORDER BY price;
+SELECT * FROM clothes WHERE quantity_available > 15;
+SELECT AVG(price) FROM clothes;
